@@ -1,0 +1,40 @@
+<form action="/register" method="POST">
+  <fieldset>
+    <legend>ข้อมูลส่วนตัว</legend>
+    <label for="fname">ชื่อจริง:</label>
+    <input type="text" id="fname" name="firstname" required />
+    <label for="lname">นามสกุล:</label>
+    <input type="text" id="lname" name="lastname" required />
+    <br />
+    <label for="email">อีเมล:</label>
+    <input type="email" id="email" name="email" required />
+    <label for="birthdate">วันเกิด:</label>
+    <input type="date" id="birthdate" name="birthdate" />
+    <fieldset>
+      <legend>เพศ:</legend>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">ชาย</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="male">หญิง</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">อื่น ๆ</label>
+    </fieldset>
+    <label for="country">ประเทศ:</label>
+    <select id="country" name="country">
+      <option value="">-- เลือกประเทศ --</option>
+      <option value="thailand">ประเทศไทย</option>
+      <option value="usa">สหรัฐอเมริกา</option>
+      <option value="japan">ญี่ปุ่น</option>
+      <option value="china">จีน</option>
+    </select>
+    <br />
+    <label for="message">ข้อมูลเพิ่มเติม:</label>
+    <br />
+    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+    <br />
+    <input type="checkbox" id="agree" name="agree" />
+    <label for="agree">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
+  </fieldset>
+  <button type="submit">ส่งข้อมูล</button>
+  <button type="reset">ยกเลิก</button>
+</form>
