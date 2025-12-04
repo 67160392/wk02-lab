@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+  <meta name="description" content="Portfolio ของนางสาวชนิดาภา ชาภักดี นิสิตชั้นปีที่2 สาขาITDI คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา" />
+    <meta name="keywords" content="Portfolio, พอร์ตโฟลิโอ, แฟ้มสะสมผลงาน, พัฒนาเว็บ, Web Developer, มหาวิทยาลัยบูรพา" />
   </head>
+
   <body>
+    <!-- Header Section -->
     <header>
-      <h1>My Portfoliog</h1>
+      <h1>My Portfolio</h1>
       <nav>
         <ul>
           <li><a href="#about">เกี่ยวกับฉัน</a></li>
@@ -16,15 +20,84 @@
         </ul>
       </nav>
     </header>
-    <!-- TODO: สร้าง main ที่มี -->
-    <!-- 1. About section -->
-    <!-- - หัวข้อ -->
-    <!-- - รูปภาพตัวเอง <img> -->
-    <!-- - ข้อมูลประกอบ -->
-    <!-- 2. Portfolio section -->
-    <!-- - List of projects ใช้ <figure> และ <figcaption> -->
-    <!-- 3. Contact section -->
-    <!-- - Contact form -->
-    <!-- TODO: สร้าง footer -->
+
+    <!-- Main Section -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <img src="images/image.jpeg" alt="รูปภาพของฉัน" width="100" />
+        <p>
+          สวัสดีค่ะ นี่คือพอร์ตโฟลิโอแรกของฉัน กำลังเรียนรู้และพัฒนาทักษะด้านการสร้างเว็บไซต์อยู่ค่ะ ขอบคุณที่เข้ามาเยี่ยมชมค่ะ:)
+        </p>
+        <h3>ทักษะ</h3>
+      <table
+          border="1"
+          style="border-collapse: collapse; width: 50%; text-align: left"
+        >
+        <tr>
+            <th>ทักษะ</th>
+            <th>ระดับความชำนาญ</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>ปานกลาง</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>พื้นฐาน</td>
+          </tr>
+          <tr>
+            <td>MySQL</td>
+            <td>ปานกลาง</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <h2>ผลงาน</h2>
+        <figure>
+          <img src="images/image1.png" alt="Project 1" width="300" />
+          <figcaption>Project 1 — เว็บไซต์ขายเสื้อผ้าออนไลน์</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/image2.png" alt="Project 2" width="300" />
+          <figcaption>Project 2 — เว็บไซต์ขายหนังสือออนไลน์</figcaption>
+        </figure>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>ช่องทางการติดต่อ</h2>
+        <p>หากต้องการติดต่อ สามารถกรอกข้อมูลและส่งข้อความหาได้ที่นี่ค่ะ</p>
+        <form action="/send-message" method="POST">
+          <label for="fullname">ชื่อ-นามสกุล:</label>
+          <input type="text" id="fullname" name="fullname" required /><br />
+
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="message">ข้อความ:</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea ><br /><br />
+
+          <button type="submit">ส่งข้อความ</button>
+          <button type="reset">ยกเลิก</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 My Portfolio. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
